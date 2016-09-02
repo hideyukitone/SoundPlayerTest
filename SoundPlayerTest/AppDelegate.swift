@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SoundPlayerTest
 //
-//  Created by 大國 嗣元 on 2016/09/03.
+//  Created by hideyuki on 2016/09/03.
 //  Copyright © 2016年 hideyuki. All rights reserved.
 //
 

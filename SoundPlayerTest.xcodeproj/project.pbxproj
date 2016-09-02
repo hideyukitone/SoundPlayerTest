@@ -14,6 +14,11 @@
 		87EDBCF11D79F51200A71D40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EDBCEF1D79F51200A71D40 /* LaunchScreen.storyboard */; };
 		87EDBCFC1D79F51200A71D40 /* SoundPlayerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EDBCFB1D79F51200A71D40 /* SoundPlayerTestTests.swift */; };
 		87EDBD071D79F51200A71D40 /* SoundPlayerTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EDBD061D79F51200A71D40 /* SoundPlayerTestUITests.swift */; };
+		87EDBD161D79F52500A71D40 /* SoundFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EDBD141D79F52500A71D40 /* SoundFileManager.swift */; };
+		87EDBD171D79F52500A71D40 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EDBD151D79F52500A71D40 /* SoundPlayer.swift */; };
+		87EDBD191D79F54000A71D40 /* sound_tapbutton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87EDBD181D79F54000A71D40 /* sound_tapbutton.mp3 */; };
+		87EDBD1B1D79F57900A71D40 /* sound_back.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87EDBD1A1D79F57900A71D40 /* sound_back.mp3 */; };
+		87EDBD1D1D79F58200A71D40 /* sound_err.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87EDBD1C1D79F58200A71D40 /* sound_err.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		87EDBD021D79F51200A71D40 /* SoundPlayerTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundPlayerTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EDBD061D79F51200A71D40 /* SoundPlayerTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerTestUITests.swift; sourceTree = "<group>"; };
 		87EDBD081D79F51200A71D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87EDBD141D79F52500A71D40 /* SoundFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundFileManager.swift; sourceTree = "<group>"; };
+		87EDBD151D79F52500A71D40 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		87EDBD181D79F54000A71D40 /* sound_tapbutton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_tapbutton.mp3; sourceTree = "<group>"; };
+		87EDBD1A1D79F57900A71D40 /* sound_back.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_back.mp3; sourceTree = "<group>"; };
+		87EDBD1C1D79F58200A71D40 /* sound_err.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_err.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 		87EDBCE51D79F51200A71D40 /* SoundPlayerTest */ = {
 			isa = PBXGroup;
 			children = (
+				87EDBD1E1D79F76D00A71D40 /* sound */,
 				87EDBCE61D79F51200A71D40 /* AppDelegate.swift */,
 				87EDBCE81D79F51200A71D40 /* ViewController.swift */,
 				87EDBCEA1D79F51200A71D40 /* Main.storyboard */,
@@ -123,6 +134,26 @@
 				87EDBD081D79F51200A71D40 /* Info.plist */,
 			);
 			path = SoundPlayerTestUITests;
+			sourceTree = "<group>";
+		};
+		87EDBD1E1D79F76D00A71D40 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				87EDBD151D79F52500A71D40 /* SoundPlayer.swift */,
+				87EDBD141D79F52500A71D40 /* SoundFileManager.swift */,
+				87EDBD1F1D79F78600A71D40 /* file */,
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
+		87EDBD1F1D79F78600A71D40 /* file */ = {
+			isa = PBXGroup;
+			children = (
+				87EDBD1C1D79F58200A71D40 /* sound_err.mp3 */,
+				87EDBD1A1D79F57900A71D40 /* sound_back.mp3 */,
+				87EDBD181D79F54000A71D40 /* sound_tapbutton.mp3 */,
+			);
+			name = file;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +262,9 @@
 			files = (
 				87EDBCF11D79F51200A71D40 /* LaunchScreen.storyboard in Resources */,
 				87EDBCEE1D79F51200A71D40 /* Assets.xcassets in Resources */,
+				87EDBD191D79F54000A71D40 /* sound_tapbutton.mp3 in Resources */,
+				87EDBD1B1D79F57900A71D40 /* sound_back.mp3 in Resources */,
+				87EDBD1D1D79F58200A71D40 /* sound_err.mp3 in Resources */,
 				87EDBCEC1D79F51200A71D40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				87EDBCE91D79F51200A71D40 /* ViewController.swift in Sources */,
+				87EDBD161D79F52500A71D40 /* SoundFileManager.swift in Sources */,
+				87EDBD171D79F52500A71D40 /* SoundPlayer.swift in Sources */,
 				87EDBCE71D79F51200A71D40 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

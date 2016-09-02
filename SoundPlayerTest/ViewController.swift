@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  SoundPlayerTest
 //
-//  Created by 大國 嗣元 on 2016/09/03.
+//  Created by hideyuki on 2016/09/03.
 //  Copyright © 2016年 hideyuki. All rights reserved.
 //
 
@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func pressTap(sender: AnyObject) {
+        SoundFileType.tapbutton.play()
+    }
+    
+    @IBAction func pressErr(sender: AnyObject) {
+        SoundFileType.err.play()
+    }
+    
+    @IBAction func pressBack(sender: AnyObject) {
+        SoundFileType.back.play()
+    }
 }
 
