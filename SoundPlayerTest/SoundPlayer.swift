@@ -18,13 +18,13 @@ final class SoundPlayer {
     
     private var audioPlayer: AVAudioPlayer?
     
-    func play(name name: String, ofType ext: String, numberOfLoops: Int) {
-        guard let path = NSBundle.mainBundle().pathForResource(name, ofType: ext) else {
+    func play(name: String, ofType ext: String, numberOfLoops: Int) {
+        guard let path = Bundle.main.path(forResource: name, ofType: ext) else {
             return
         }
         
         do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path), fileTypeHint: nil)
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path), fileTypeHint: nil)
             
             audioPlayer?.numberOfLoops = numberOfLoops
             audioPlayer?.prepareToPlay()

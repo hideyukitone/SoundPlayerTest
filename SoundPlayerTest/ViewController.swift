@@ -20,15 +20,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func pressTap(sender: AnyObject) {
+    @IBAction func pressTap(_ sender: AnyObject) {
         SoundFileType.tapbutton.play()
     }
     
-    @IBAction func pressErr(sender: AnyObject) {
+    @IBAction func pressErr(_ sender: AnyObject) {
         SoundFileType.err.play()
     }
     
-    @IBAction func pressBack(sender: AnyObject) {
+    @IBAction func pressBack(_ sender: AnyObject) {
         SoundFileType.back.play()
     }
 }
